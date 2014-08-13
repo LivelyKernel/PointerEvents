@@ -231,6 +231,7 @@
           // index in pointermap.
           if (key !== 1 && !this.findTouch(tl, key - 2)) {
             var p = value.out;
+            p.target = findTarget(p); // in case target was removed from DOM
             d.push(p);
           }
         }, this);
