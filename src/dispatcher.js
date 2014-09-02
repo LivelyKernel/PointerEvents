@@ -238,6 +238,9 @@
         e.preventDefault = inEvent.preventDefault;
       }
       e._target = e._target || inEvent.target;
+      e.layerX = inEvent.layerX;
+      e.layerY = inEvent.layerY;
+      e.which = inEvent.which;
       return e;
     },
     // make and dispatch an event in one call

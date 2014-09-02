@@ -58,6 +58,9 @@
       e.pointerId = this.POINTER_ID;
       e.isPrimary = true;
       e.pointerType = this.POINTER_TYPE;
+      e.layerX = inEvent.layerX;
+      e.layerY = inEvent.layerY;
+      e.which = inEvent.which;
       if (!HAS_BUTTONS) {
         e.buttons = WHICH_TO_BUTTONS[e.which] || 0;
       }
